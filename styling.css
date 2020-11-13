@@ -151,6 +151,7 @@ a:active {
 .sidebar ul li a{
     transition: font-size 1s;
     padding-left: 2.5em;
+    color: mediumblue;
 }
 
 

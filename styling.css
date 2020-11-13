@@ -1,7 +1,7 @@
 #container {
+    overflow: hidden;
     width: 50%;
     margin: auto;
-    border: black 1px solid;
 }
 
 #header {
@@ -33,15 +33,19 @@
     margin-top: 10px;
 }
 
+
 .text {
     margin-left: 15px;
-    background-image: url(https://www.w3schools.com/css/searchicon.png);
+    background-image: url("/images/search.png");
     background-repeat: no-repeat;
     float: left;
+    width: 50%;
+    height: 20px;
 }
 
 .submit {
     background-color: rgb(163, 8, 163);
+    height: 25px;
     color: white;
     margin-right: 15px;
     float: right;
@@ -77,10 +81,11 @@ a:active {
     font-size: 20px;
     padding: 1em 0.5em;
     text-decoration: none;
+    transition: font-size 1s;
 }
 
 
-#menu ul li a:hover {
+#menu ul li a:hover, #menu ul li a.active, .sidebar ul li a:hover, .sidebar ul li a.active {
     font-size: 25px;
     font-weight: bold;
     color: rgb(231, 10, 194);
@@ -112,6 +117,65 @@ a:active {
     float: left;
 }
 
+#leftsidebar ul, #rightsidebar ul{
+    list-style: none;
+}
+
 #rightsidebar{
     float: right;
 }
+
+#leftsidebar ul li{
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    height: 30px;
+}
+
+#rightsidebar ul li{
+    background-image: url("images/tick.png");
+    background-repeat: no-repeat;
+    height: 40px;
+}
+
+.sidebar{
+    border-radius: 20px;
+    border: rgba(12, 238, 118, 1) 2px solid;
+    width: 45%;
+    padding-left: 1.5em;
+}
+
+.sidebar ul li{
+    margin-top: .5em;
+}
+
+.sidebar ul li a{
+    transition: font-size 1s;
+    padding-left: 2.5em;
+}
+
+
+.sidebar h3{
+    color: rgb(163, 8, 163);    
+    font-size: 2em;
+}
+
+.clear{
+    clear: both;
+    width: 100%;
+    height: 10px;
+}
+
+footer{
+    background: rgb(142,7,190);
+    background: linear-gradient(0deg, rgba(142,7,190,0.9023810207676821) 0%, rgba(180,181,9,0.8323530095632002) 100%);
+    clear: both;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  
